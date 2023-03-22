@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<link rel="stylesheet" href="main3/efecto.css">
     <!-- UTF8 se refiere al tipo de caracteres especiales dentro de la pagina -->
     <meta charset="UTF-8">
     <!-- Compatible con el explorador Edge -->
@@ -27,13 +28,27 @@
     <section>
         <h2>Formulario</h2>
         <form action="">
-            <input type="text" id="Nombre" placeholder="Nombre"">
-            <input type="text" id="Apellidos" placeholder="Apellidos">
-            <input type="date" id="Fecha">
-            <input type="tel" id="Telefono" placeholder="55-55-55-55-55">
-            <input type="email" id="Email" placeholder="ejemplo@dominio.com">
+            <input type="text" id="Nombre" placeholder="Nombre" required>
+            <!-- El required permite que un campo no se escuentre vacio -->
+            <input type="text" id="Apellidos" placeholder="Apellidos" required>
+            <input type="date" id="Fecha" required>
+            <input type="tel" id="Telefono" placeholder="55-55-55-55-55" required>
+            <input type="email" id="Email" placeholder="ejemplo@dominio.com" required>
+            <input type="password" id="Password" placeholder="Password" required>
+            <input type="file" id="Archivo" required>
             <input type="submit" value="Registrar">
         </form>
+        
+    </section>
+    <section>
+        <div id="Imagenes">
+            <img src="img/ls.jpg" alt="1" width="150px" height="150px" class="efecto"> 
+            <!-- src me trae a los objetos --> <!-- hrs me lleva a los objetos-->
+            <img src="img/m.jpg" alt="2" width="150px" height="150px"> 
+            <img src="img/R.jpg" alt="3" width="150px" height="150px" class="efecto"> 
+            <img src="img/rsd.jpg" alt="4" width="150px" height="150px"> 
+            <img src="img/ws.jpg" alt="5" width="150px" height="150px"> 
+        </div>
     </section>
 </body>
 </html>
