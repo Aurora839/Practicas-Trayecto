@@ -32,7 +32,7 @@ p{
 }
 .estilo-nav{
     text-transform: uppercase;
-    letter-spacing: 0.7rem;
+    letter-spacing: 0.15rem;
     font-size: 0.7rem;
 }
 .tex-conter{
@@ -47,7 +47,7 @@ p{
 }
 .container{
     max-width: 1200px;
-    margin: 0;
+    margin: 0 auto;
 }
 .nav-bar{
     position: fixed;
@@ -85,7 +85,7 @@ p{
     height: 4px;
     border-radius: 2px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     transition: all 300ms ease-in-out;
 }
 
@@ -111,16 +111,16 @@ p{
 
 #drop-down-cbox:checked + label span:nth-child(1){
     top: 50%;
-    transform: translate(-50, -50%) rotate(45deg);
+    transform: translate(-50,-50%) rotate(45deg);
 }
 
 #drop-down-cbox:checked + label span:nth-child(2){
-    left: 50%;
+    left:-150%;
 }
 
 #drop-down-cbox:checked + label span:nth-child(3){
     top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%,-50%) rotate(-45deg);
 }
 
 .main-nav{
@@ -165,7 +165,7 @@ p{
     border-bottom: none;
 }
 
-@media (max-width:700px){
+@media (max-width:900px){
     .site-logo{
         font-size: 1rem;
         flex-grow: 1;
